@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Torneio Clash Royale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/style.css" />
+  <button id="tema-toggle">🎨 Tema</button>
 
-  <!-- Fonte estilo Clash -->
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
+    <h1>⚔️ Torneio Clash Royale</h1>
     <button id="menu-toggle">☰</button>
-    <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Clash_Royale_game_logo.png" 
-         alt="Logo Clash Royale" height="50">
-    <h1>Torneio Clash Royale</h1>
   </header>
 
-  <!-- Menu lateral -->
-  <nav id="sidebar">
-    <a href="#">👑 Participantes</a>
-    <a href="#">⚔️ Clã Inacreditáveis</a>
-    <a href="#">🛡️ Regras</a>
-    <a href="#">💎 Premiações</a>
+  <nav id="menu">
+    <a href="#inicio">🏁 Início</a>
+    <a href="#participantes">👑 Participantes</a>
+    <a href="#regras">🛡️ Regras</a>
+    <a href="#premios">💎 Prêmios</a>
+    <a href="#galeria">📸 Galeria</a>
   </nav>
 
-  <!-- Conteúdo -->
   <main>
-    <h2>Bem-vindo ao Torneio!</h2>
-    <p>Prepare-se para batalhas épicas entre os melhores jogadores.</p>
+    <section id="inicio" class="pixel-box">
+      <h2>Prepare-se para a batalha!</h2>
+     
+      <div class="info-box">
+        <p><strong>📅 Quando:</strong> Quartas e Quintas às 12h30</p>
+        <p><strong>📍 Onde:</strong> Arena Royale</p>
+      </div>
+    </section>
+
+    <section id="participantes" class="pixel-box">
+      <h2>👑 Participantes</h2>
+      <ul>
+        <li>Martinelli</li>
+        <li>Teodósio</li>
+        <li>Henri</li>
+        <li>Bernardo</li>
+      </ul>
+    </section>
+
+    <section id="regras" class="pixel-box">
+      <h2>🛡️ Regras</h2>
+      <ul>
+        <li>Megadesafio</li>
+        <br>
+        <li>5 Vidas</li>
+      </ul>
+    </section>
+
+    <section id="premios" class="pixel-box">
+      <h2>💎 Prêmios</h2>
+      <p>A definir</p>
+    </section>
+
+    <section id="galeria" class="pixel-box">
+      <h2>📸 Galeria</h2>
+      <div class="grid">
+        <div class="pixel-card">Vitória 1</div>
+        <div class="pixel-card">Vitória 2</div>
+        <div class="pixel-card">Vitória 3</div>
+      </div>
+    </section>
   </main>
 
-  <!-- Script -->
-  <script src="/js/script.js"></script>
+  <footer>
+    <p>© 2025 Torneio Clash Royale</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
